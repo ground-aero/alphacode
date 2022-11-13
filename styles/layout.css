@@ -26,7 +26,7 @@ body {
   background-image: url('../images/euclidean-vector6_green.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: bottom center;
   display: flex;
   flex-direction: column;
   padding: 15px 0 4px;
@@ -115,8 +115,10 @@ body {
 }
 
 .footer {
+  width: 95%;
   background-color: rgba(250, 250, 250 0.9);
   border-top: 1px dashed rgb(202, 202, 202);
   border-left: 1px dashed rgb(202, 202, 202);
   border-top-left-radius: 16px;
+  align-self: center;
 }

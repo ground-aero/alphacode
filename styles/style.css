@@ -100,16 +100,16 @@
 .menu {
   position: absolute;
   top: 40%;
-  left: 1%;
+  right: 1%;
   background-color: rgb(250, 250, 250);
   border: 1px dashed rgb(165, 165, 165);
   display: grid;
   grid-auto-rows: var(--size);
-  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   border-bottom-left-radius: var(--radius);
   padding: var(--padding);
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: -3px 1px 12px rgba(0, 0, 0, 0.1);
   /* z-index: 1; */
 }
 .menu__item {
@@ -129,13 +129,13 @@
 .menu__text {
   position: absolute;
   top: 50%;
-  left: 0;
+  right: 0;
   z-index: -1;
   transform: translateY(-50%);
-  box-shadow: 1px 1px 2px rgba(55, 55, 55, 0.2);
+  box-shadow: -1px 1px 2px rgba(55, 55, 55, 0.2);
   background-color: rgb(250, 250, 250);
   color: rgb(88, 88, 88);
-  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
   transition: all 0.4s ease-in-out;
   max-width: 0;
   overflow: hidden;
@@ -149,10 +149,10 @@
 }
 
 .menu__item:hover .menu__text {
-  left: 100%;
+  right: 100%;
   max-width: 300%;
   padding: 14px 24px;
-  padding-left: 30px;
+  padding-right: 30px;
 }
 /* side-menu */
 /* .side-menu {
@@ -213,7 +213,7 @@
 .header__logo {
   background-image: url('../images/ttt.png');
   border-top-right-radius: var(--radius);
-  background-size: 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   height: 145px;
   opacity: 0.9;
@@ -290,10 +290,10 @@
   color: rgb(107, 107, 107);
 }
 
-/* footer */
+/* footer styles */
 .footer__text {
   color: rgb(54, 54, 54);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   text-align: right;
   margin: 0 40px 0 0;
