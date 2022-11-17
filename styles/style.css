@@ -215,7 +215,7 @@
   border-top-right-radius: var(--radius);
   background-size: auto 100%;
   background-repeat: no-repeat;
-  height: 145px;
+  height: 100px;
   opacity: 0.9;
   position: relative;
   z-index: 0;
@@ -228,7 +228,7 @@
   font-weight: 700;
   /* color:#f12400; */
   background-color: green;
-  position: absolute;
+  position: relative;
   bottom: 6px;
   align-self: center;
   /* left: 16px; */
