@@ -14,16 +14,22 @@ body {
 }
 
 /* 
-1184 общий ограничитель контента
-984 ограничитель некоторых секций
+1184 - general content/ limit
+984 - sections /limit
  */
 
 .page__container {
   max-width: 1280px;
   margin: 0 auto;
   min-height: 100vh;
-  /* background-image: url('../images/sphere.jpg'); */
-  background-image: url('../images/euclidean-vector6_green.png');
+  background-color: rgba(250, 250, 250, 0);
+  background-image: url("../images/euclidean-6_green-small-750x750.webp");
+  background-image: -webkit-image-set(
+  url("../images/euclidean-6_green-small-750x750.webp") 1x,
+  url("../images/euclidean-6_green-large-1024x1024.webp") 2x);
+  background-image: image-set(
+  url("../images/euclidean-6_green-small-750x750.webp") 1x,
+  url("../images/euclidean-6_green-large-1024x1024.webp") 2x);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
@@ -31,8 +37,6 @@ body {
   flex-direction: column;
   padding: 15px 0 4px;
   box-sizing: border-box;
-  /* background-color: rgb(250, 250, 250); */
-  background-color: rgba(250, 250, 250 0.5);
   /* #e4e4e4;; */
   font-family: 'Montserrat', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;

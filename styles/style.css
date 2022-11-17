@@ -211,7 +211,7 @@
 } */
 
 .header__logo {
-  background-image: url('../images/ttt.png');
+  background-image: url('../images/json1.png'); /*instead ttt.png */
   border-top-right-radius: var(--radius);
   background-size: auto 100%;
   background-repeat: no-repeat;
